@@ -1,3 +1,24 @@
+body {
+  background: #242B33;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }

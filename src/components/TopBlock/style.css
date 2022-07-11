@@ -1,0 +1,67 @@
+
+/*topBlock*/
+.topBlock {
+    background-image: url("../../assets/images/headerBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 548px;
+}
+
+
+.topBlock h1 {
+    /*Жилой комплекс в историческом центре*/
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+
+    color: #D4C17F;
+
+}
+
+.zhiloyKomplecs{
+    padding-top: 150px;
+    opacity: 1;
+}
+
+.zhiloyKomplecs.active {
+    padding-top: 150px;
+    animation-name: textcenter;
+    animation-duration: 1000ms;
+    opacity: 1;
+}
+
+#mouseBlock {
+    text-align: center;
+}
+
+#mouse {
+    /* mouse */
+
+    margin: 50px 0 0 0;
+
+    animation-name: mouseAnim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/*Анимация мыши*/
+@keyframes mouseAnim {
+    0% {
+        margin-top: 30px;
+    }
+    25% {
+        margin-top: 0;
+    }
+    50% {
+        margin-top: 30px;
+    }
+    75% {
+        margin-top: 60px;
+    }
+    100% {
+        margin-top: 30px;
+    }
+}
