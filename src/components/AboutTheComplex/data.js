@@ -1,4 +1,4 @@
-import '../../assets/styles/media.css';
+
 // images
 import benchIcon from '../../assets/svg_icons/bench.svg';
 import buildingIcon from '../../assets/svg_icons/building.svg';

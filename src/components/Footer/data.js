@@ -1,4 +1,4 @@
-export const HeaderList = [
+export const FooterList = [
   {
     title: 'О комплексе',
     link: '#topAddress',

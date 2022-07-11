@@ -1,0 +1,55 @@
+.footer {
+    background: #2D343C;
+    width: 100%;
+    margin-top: 70px;
+    padding-top: 20px;
+}
+
+
+#footerLogoBlock {
+    width: 10%;
+    margin-left: 10%;
+}
+
+#footerMenus {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 20px;
+}
+
+.footer a {
+    color: #FFFFFF;
+}
+
+
+.footer ul li {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    padding: 5px;
+    text-align: left;
+
+    color: #FFFFFF;
+}
+
+.footer a:hover {
+    color: #D4C17F;
+}
+
+
+#footerMenu1 {
+    margin-left: 20%;
+}
+
+
+.footer div ul li b a {
+    color: #D4C17F;
+}
+
+#footerMenu3 img {
+    padding: 2px;
+}

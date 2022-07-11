@@ -6,7 +6,7 @@ import './media.css';
 
 const Registration = () => {
   return (
-    <section className="registration anim-items">
+    <section className="registration anim-items" id={"registration"}>
       <div className="wannaWatch">
         <span>Хотите посмотреть?</span><br/>
         <p>

@@ -10,7 +10,7 @@ import './media.css';
 
 const Appartments = () => {
   return (
-    <section className="appartments">
+    <section className="appartments" id={"appartments"}>
       <h3>Наши квартиры</h3><br/>
 
       <div className="lofts12 anim-items">

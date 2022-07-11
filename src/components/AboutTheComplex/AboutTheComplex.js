@@ -21,7 +21,7 @@ function AboutTheComplex() {
   }, []);
 
   return (
-    <section className="about">
+    <section className="about" id={"about"}>
       <ul>
         {renderList}
       </ul>
