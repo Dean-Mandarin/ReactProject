@@ -18,12 +18,13 @@ function Header() {
       <header>
         <div className="top-nav">
 
+          {/*логотип*/}
           <div id="headerLogoBlock">
             <a href="#" className="houseVOP">HouseVOP</a><br/>
             <a href="#" className="logoBottom">ЖИЛОЙ КОМПЛЕКС</a>
           </div>
 
-
+          {/*выпадающее / навигационное меню*/}
           <input id="menu-toggle" type="checkbox"/>
           <label className='menu-button-container' htmlFor="menu-toggle">
             <div className='menu-button'></div>
