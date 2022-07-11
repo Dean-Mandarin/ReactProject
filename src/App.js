@@ -8,6 +8,7 @@ import TopBlock from "./components/TopBlock/TopBlock";
 import PhonePlace from "./components/PhonePlace/PhonePlace";
 import AboutTheComplex from "./components/AboutTheComplex/AboutTheComplex";
 import Appartments from "./components/Appartments/Appartments";
+import Registration from "./components/Registration/Registration";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <PhonePlace />
       <AboutTheComplex />
       <Appartments />
+      <Registration />
     </div>
   );
 }

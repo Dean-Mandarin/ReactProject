@@ -1,0 +1,55 @@
+
+@media only screen and (max-width: 1280px) {
+    .wannaWatch span, .place p {
+        font-size: calc(23px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+        line-height: calc(15px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+    }
+
+    .wannaWatch p, .registration small {
+        line-height: calc(15px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+        font-size: calc(10px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+    }
+
+
+    .registration #button {
+        font-size: calc(8px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+    }
+
+    .registration {
+        padding-top: calc(67px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+    }
+
+    #formRaw1 input {
+        height: calc(20px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+        width: calc(85% + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+    }
+
+}
+
+@media (min-width: 425px) and (max-width: 1280px) {
+    #formRaw1 input {
+        height: calc(35px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+    }
+
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+    #formRaw1 input {
+        height: calc(25px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    #formRaw1 input{
+        font-size: calc(11px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+    }
+}
+
+@media (min-width: 768px) {
+    .wannaWatch{
+        padding-left: 65px;
+    }
+}

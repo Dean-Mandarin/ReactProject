@@ -1,0 +1,111 @@
+.registration {
+    padding-top: 70px;
+    display: flex;
+    width: 100%;
+    height: 350px;
+    margin-left: 0;
+
+    background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%),
+    linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url('../../assets/images/skyscraper.jpg'), #C4C4C4;
+}
+
+.wannaWatch span {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    /* accent */
+
+    color: #D4C17F;
+}
+
+.wannaWatch {
+    width: 50%;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 10px;
+    text-align: left;
+}
+
+.wannaWatch p {
+    /* Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+     Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+     В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,
+     используя Lorem Ipsum для распечатки образцов. */
+    height: 114px;
+    top: 230px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+
+.input {
+    text-align: center;
+    width: 50%;
+    padding-top: 20px;
+}
+
+
+small {
+    margin-top: 20px;
+    text-align: center;
+    width: 80%;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+
+    color: #E7E7E7;
+}
+
+#button {
+    background: #D4C17F;
+    width: 50%;
+    border-radius: 2px;
+    height: 35px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    transition: 0.8s;
+    opacity: 1;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 15px;
+    color: white;
+}
+
+#button:hover{
+    color: #D4C17F;
+    background: white;
+    transition-duration: 500ms;
+}
+
+#formRaw2 {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#formRaw1 input {
+    width: 50%;
+    height: 35px;
+    text-align: center;
+    font-family: 'Raleway';
+
+    background-color: transparent;
+    color: #BEBEBE;
+
+    /*background: #FFFFFF;*/
+    /*opacity: 0.2;*/
+}
+
+
+.input button:hover {
+    background: #FFFFFF;
+    color: #D4C17F;
+    transition-duration: 1s;
+}
