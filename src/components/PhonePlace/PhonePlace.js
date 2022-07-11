@@ -2,7 +2,7 @@ import React from 'react';
 
 // styles
 import './style.css';
-import '../../assets/styles/media.css';
+import './media.css';
 
 // images
 import phoneIcon from '../../assets/svg_icons/phone.svg';

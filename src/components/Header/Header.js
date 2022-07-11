@@ -1,6 +1,10 @@
 import React, {useMemo} from 'react';
+
+//styles
 import './style.css';
-import '../../assets/styles/media.css';
+import './media.css';
+
+//list
 import {HeaderList} from "./data";
 
 function Header() {

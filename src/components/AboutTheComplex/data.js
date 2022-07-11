@@ -1,3 +1,4 @@
+import '../../assets/styles/media.css';
 // images
 import benchIcon from '../../assets/svg_icons/bench.svg';
 import buildingIcon from '../../assets/svg_icons/building.svg';
@@ -10,25 +11,25 @@ export const AboutList = [
   {
     //иконка свера
     title: 'bench',
-    icon: <img src={benchIcon}/>,
-    description: <p>Полностью <br/> обустроенный</p>
+    icon: benchIcon,
+    description: 'Рядом исторические парки и скверы'
   },
   {
     //иконка здания
     title: 'building',
-    icon: <img src={buildingIcon}/>,
-    description: <p>Полностью <br/> обустроенный</p>
+    icon: buildingIcon,
+    description: 'Полностью обустроенный'
   },
   {
     //иконка фонтана
     title: 'fountain',
-    icon: <img src={fountainIcon}/>,
-    description: <p>Полностью <br/> обустроенный</p>
+    icon: fountainIcon,
+    description: '10 фонтанов на территории'
   },
   {
     //иконка велосипеда
     title: 'bicycle',
-    icon: <img src={bicycleIcon}/>,
-    description: <p>Полностью <br/> обустроенный</p>
+    icon: bicycleIcon,
+    description: '6 км велодорожек'
   }
 ]

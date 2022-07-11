@@ -2,7 +2,7 @@ import React from 'react';
 
 // styles
 import './style.css';
-import '../../assets/styles/media.css';
+import './media.css';
 
 // images
 import mouseIcon from '../../assets/svg_icons/mouse.svg';
@@ -12,7 +12,7 @@ function TopBlock() {
     <section className="topBlock">
 
       {/*Жилой комплекс в историческом центре*/}
-      <div className="zhiloyKomplecs anim-items">
+      <div className="zhiloyKomplecs">
         <h1>Жилой комплекс<br/> в историческом центре</h1>
       </div>
 

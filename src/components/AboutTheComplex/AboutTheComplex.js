@@ -2,7 +2,7 @@ import React, {useMemo} from 'react';
 
 //style
 import './style.css';
-import '../../assets/styles/media.css';
+import './media.css';
 
 //список svg
 import {AboutList} from "./data";
@@ -13,7 +13,8 @@ function AboutTheComplex() {
     return AboutList.map(({title, icon, description}) => {
       return (
         <li key={title}>
-          {icon} <br/> {description}
+          <img src={icon}/>
+          <p>{description}</p>
         </li>
       )
     })

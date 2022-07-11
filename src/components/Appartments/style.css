@@ -1,0 +1,46 @@
+.appartments {
+    padding-top: 50px;
+}
+
+.appartments h3 {
+    /*Наши квартиры*/
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-size: 36px;
+    text-align: left;
+    margin-left: 150px;
+
+    color: #D4C17F;
+}
+
+
+.lofts12, .lofts34 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    text-align: left;
+    gap: 8px;
+    opacity: 1;
+}
+
+.loft1, .loft3 {
+    padding-left: 10%;
+}
+
+.loft2, .loft4 {
+    padding-right: 10%;
+}
+
+.appartments p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: -50px;
+    margin-left: 50px;
+
+    color: #FFFFFF;
+}

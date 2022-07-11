@@ -1,0 +1,25 @@
+@media only screen and (max-width: 768px) {
+    .about ul li {
+        font-size: calc(9px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+    }
+
+}
+
+@media (max-width: 427px) {
+    .about img {
+        width: calc(40px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+    }
+
+}
+
+@media (min-width: 425px) and (max-width: 1280px) {
+    .about{
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width: 582px){
+    .about ul li{
+        line-height: calc(10px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+    }
+}
