@@ -8,21 +8,25 @@ const br = document.createElement('br');
 
 export const AboutList = [
   {
+    //иконка свера
     title: 'bench',
     icon: <img src={benchIcon}/>,
     description: <p>Полностью <br/> обустроенный</p>
   },
   {
+    //иконка здания
     title: 'building',
     icon: <img src={buildingIcon}/>,
     description: <p>Полностью <br/> обустроенный</p>
   },
   {
+    //иконка фонтана
     title: 'fountain',
     icon: <img src={fountainIcon}/>,
     description: <p>Полностью <br/> обустроенный</p>
   },
   {
+    //иконка велосипеда
     title: 'bicycle',
     icon: <img src={bicycleIcon}/>,
     description: <p>Полностью <br/> обустроенный</p>
