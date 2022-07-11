@@ -1,0 +1,10 @@
+@media only screen and (max-width: 1280px){
+    .yandexMap iframe{
+        height: calc(200px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+    }
+
+    .place p {
+        font-size: calc(23px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+        line-height: calc(15px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+    }
+}

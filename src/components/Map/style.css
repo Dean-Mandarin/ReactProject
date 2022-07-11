@@ -1,0 +1,19 @@
+.place {
+    padding-top: 20px;
+}
+
+.yandexMap {
+    text-align: center;
+}
+
+.place p {
+    padding-left: 10%;
+
+    font-family: 'Playfair Display', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+
+    color: #D4C17F;
+}

@@ -9,6 +9,8 @@ import PhonePlace from "./components/PhonePlace/PhonePlace";
 import AboutTheComplex from "./components/AboutTheComplex/AboutTheComplex";
 import Appartments from "./components/Appartments/Appartments";
 import Registration from "./components/Registration/Registration";
+import Video from "./components/Video/Video";
+import Map from "./components/Map/Map";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <AboutTheComplex />
       <Appartments />
       <Registration />
+      <Video />
+      <Map />
     </div>
   );
 }

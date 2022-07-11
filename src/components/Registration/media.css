@@ -1,6 +1,6 @@
 
 @media only screen and (max-width: 1280px) {
-    .wannaWatch span, .place p {
+    .wannaWatch span{
         font-size: calc(23px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
         line-height: calc(15px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
     }
