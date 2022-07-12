@@ -7,9 +7,10 @@
 
 
 #footerLogoBlock {
-    width: 10%;
     margin-left: 10%;
+    text-align: left;
 }
+
 
 #footerMenus {
     display: flex;
