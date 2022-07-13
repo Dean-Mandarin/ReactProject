@@ -4,6 +4,7 @@
 
 .yandexMap {
     text-align: center;
+    opacity: 0;
 }
 
 .place p {
@@ -17,4 +18,24 @@
     line-height: 48px;
 
     color: #D4C17F;
+}
+
+/*Map animation*/
+
+.yandexMap.active {
+    animation-name: mapAnim;
+    animation-duration: 1.5s;
+    opacity: 1;
+}
+
+@keyframes mapAnim {
+    0% {
+        width: 10%;
+        opacity: 0;
+    }
+
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
 }

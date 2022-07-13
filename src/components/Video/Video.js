@@ -6,9 +6,9 @@ import './media.css';
 
 const Video = () => {
   return (
-    <section className="video anim-items">
+    <section className="none">
       {/*Video from YouTube*/}
-      <div className="video">
+      <div className="video anim-items">
         <iframe width="80%" height="500px" src="https://www.youtube.com/embed/Ynr4o0eOjdg"
                 title="YouTube video player"
                 frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;

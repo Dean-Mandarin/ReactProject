@@ -22,7 +22,7 @@
     width: 100%;
     text-align: left;
     gap: 8px;
-    opacity: 1;
+    opacity: 0;
 }
 
 .loft1, .loft3 {
@@ -43,4 +43,23 @@
     margin-left: 50px;
 
     color: #FFFFFF;
+}
+
+/*Лофт animations*/
+.lofts12.active, .lofts34.active {
+    gap: 10px;
+    animation-name: loft_anim;
+    animation-duration: 1s;
+    opacity: 1;
+}
+
+@keyframes loft_anim {
+    0% {
+        gap: 20%;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

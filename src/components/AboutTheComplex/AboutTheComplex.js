@@ -12,7 +12,7 @@ function AboutTheComplex() {
   const renderList = useMemo(() => {
     return AboutList.map(({title, icon, description}) => {
       return (
-        <li key={title}>
+        <li className="district anim-items" key={title}>
           <img src={icon}/>
           <p>{description}</p>
         </li>

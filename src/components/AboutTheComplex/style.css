@@ -33,3 +33,28 @@
     max-width: 160px;
     margin: 12px auto auto auto;
 }
+
+.district.active {
+    animation-name: bench;
+    animation-duration: 1s;
+}
+
+/*Зум анимация иконок*/
+@keyframes bench {
+    0% {
+        -moz-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        -webkit-transition: all 1s ease-out;
+        -webkit-transform: scale(0.1);
+        -moz-transform: scale(0.1);
+        -o-transform: scale(0.1);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        opacity: 1;
+    }
+
+}

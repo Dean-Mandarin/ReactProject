@@ -12,7 +12,7 @@ function TopBlock() {
     <section className="topBlock">
 
       {/*Жилой комплекс в историческом центре*/}
-      <div className="zhiloyKomplecs">
+      <div className="zhiloyKomplecs anim-items">
         <h1>Жилой комплекс<br/> в историческом центре</h1>
       </div>
 

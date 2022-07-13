@@ -15,7 +15,7 @@
         font-size: calc(8px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
     }
 
-    .registration {
+    .formBlock {
         padding-top: calc(67px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
     }
 

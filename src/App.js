@@ -1,6 +1,9 @@
 // styles
 import './App.css';
 
+//hook
+import React, {useEffect} from 'react';
+
 // components
 import Header from "./components/Header/Header";
 import TopBlock from "./components/TopBlock/TopBlock";
@@ -13,6 +16,28 @@ import Map from "./components/Map/Map";
 import Footer from "./components/Footer/Footer";
 
 function App() {
+  useEffect(() => {
+    //запуск анимаций при появлении на экране
+    const animItems = document.querySelectorAll(".anim-items");
+    console.log(animItems);
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry =>{
+          entry.target.classList.toggle("active", entry.isIntersecting)
+        })
+      },
+      {
+        threshold: 0.4,
+      }
+    )
+
+    animItems.forEach(animItem => {
+      observer.observe(animItem);
+    })
+  });
+
+
   return (
     <div className="App">
       <Header />
