@@ -1,5 +1,5 @@
-import React, {useState, useRef} from 'react';
-import axios from 'axios'
+import React, {useState} from 'react';
+import axios from 'axios';
 //styles
 import './style.css';
 import './media.css';
@@ -9,7 +9,7 @@ const Registration = () => {
   const [phone, setPhone] = useState('');
 
   const fetchAddUserAction = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     const url = 'http://localhost:8080/api/user';
     await axios.post(url, { name, phoneNumber: phone }).then(res => {
       console.log(res)
