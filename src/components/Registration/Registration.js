@@ -1,10 +1,22 @@
-import React from 'react';
-
+import React, {useState, useRef} from 'react';
+import axios from 'axios'
 //styles
 import './style.css';
 import './media.css';
 
 const Registration = () => {
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+
+  const fetchAddUserAction = async (e) => {
+    e.preventDefault()
+    const url = 'http://localhost:8080/api/user';
+    await axios.post(url, { name, phoneNumber: phone }).then(res => {
+      console.log(res)
+    })
+  }
+
+
   return (
     <section className="registration" id="registration">
       <div className="formBlock anim-items">
@@ -20,10 +32,10 @@ const Registration = () => {
         </div>
 
         <div className="input">
-          <form>
+          <form id="form">
             <div id="formRaw1">
-              <input type="text" placeholder="Ваше имя" id="nameInput"/><br/><br/>
-              <input type="text" placeholder="Ваш телефон" id="phoneInput"/><br/>
+              <input type="text" onChange={(e) => { setName(e.target.value) }} placeholder="Ваше имя" id="nameInput"/><br/><br/>
+              <input type="text" onChange={(e) => { setPhone(e.target.value) }} placeholder="Ваш телефон" id="phoneInput"/><br/>
             </div>
 
             <div id="formRaw2">
@@ -32,14 +44,18 @@ const Registration = () => {
                 И не сохраняем ваш номер в базу.</small><br/>
 
 
-              <input type="submit" id="button" value="Посмотреть район"/>
+              <input
+                type="submit"
+                id="button"
+                onClick={(e) => { fetchAddUserAction(e)}}
+                value="Посмотреть район"
+              />
 
             </div>
 
           </form>
         </div>
       </div>
-
 
     </section>
   );

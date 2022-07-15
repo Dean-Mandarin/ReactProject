@@ -25,6 +25,7 @@ function AboutTheComplex() {
       <ul>
         {renderList}
       </ul>
+
     </section>
   );
 }
