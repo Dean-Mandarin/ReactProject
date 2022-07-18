@@ -5,14 +5,18 @@
         line-height: calc(15px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
     }
 
-    .wannaWatch p, .registration small {
+    .wannaWatch p, .registration small{
         line-height: calc(15px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
         font-size: calc(10px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
     }
 
+    .registration small {
+
+    }
+
 
     .registration #button {
-        font-size: calc(8px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+        font-size: calc(9px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
     }
 
     .formBlock {
@@ -22,6 +26,10 @@
     #formRaw1 input {
         height: calc(20px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
         width: calc(85% + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+    }
+
+    #button{
+        margin-top: calc(1px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
     }
 
 }
@@ -45,6 +53,10 @@
 
     #formRaw1 input{
         font-size: calc(11px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+    }
+
+    #formRaw2{
+        width: 90%;
     }
 }
 

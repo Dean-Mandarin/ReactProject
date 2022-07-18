@@ -9,13 +9,11 @@ import {HeaderList} from "./data";
 
 function Header() {
   const renderList = useMemo(() => {
-    return HeaderList.map(({title, link}) => {
-      return (
-        <li key={title}>
-          <a href={link}>{title}</a>
-        </li>
-      )
-    })
+    return HeaderList.map(({title, link}) => (
+      <li key={title}>
+        <a href={link}>{title}</a>
+      </li>
+    ));
   }, []);
 
   return (
@@ -29,18 +27,15 @@ function Header() {
           </div>
 
           {/*выпадающее / навигационное меню*/}
-          <input id="menu-toggle" type="checkbox"/>
+          <input id="menu-toggle" type="checkbox" />
           <label className='menu-button-container' htmlFor="menu-toggle">
-            <div className='menu-button'></div>
+            <div className='menu-button' />
           </label>
 
           <ul className="menu">
             {renderList}
           </ul>
-
-
         </div>
-
       </header>
   );
 }

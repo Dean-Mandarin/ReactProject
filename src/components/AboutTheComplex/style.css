@@ -36,6 +36,10 @@
     margin: 12px auto auto auto;
 }
 
+.district{
+    opacity: 1;
+}
+
 .district.active {
     animation-name: bench;
     animation-duration: 1s;

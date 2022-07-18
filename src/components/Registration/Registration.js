@@ -1,30 +1,37 @@
 import React, {useState} from 'react';
+
+// utils
 import axios from 'axios';
+
 //styles
 import './style.css';
 import './media.css';
 
 const Registration = () => {
-  const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
+  const [state, setState] = useState({
+    name: '',
+    phoneNumber: '',
+  });
+
+  const onChangeInput = (event) => {
+    const { name, value } = event.target;
+    setState((prev) => ({ ...prev, [name]: value }));
+  };
 
   const fetchAddUserAction = async (e) => {
     e.preventDefault();
     const url = 'http://localhost:8080/api/user';
-    await axios.post(url, { name, phoneNumber: phone }).then(res => {
+    await axios.post(url, { ...state }).then((res) => {
       console.log(res);
     });
-    setPhone('');
-    setName('');
-    console.log(name, phone);
-  }
-
+    setState({ name: '', phoneNumber: '' });
+  };
 
   return (
     <section className="registration" id="registration">
       <div className="formBlock anim-items">
         <div className="wannaWatch">
-          <span>Хотите посмотреть?</span><br/>
+          <span>Хотите посмотреть?</span>
           <p>
             Lorem Ipsum - это текст-"рыба", часто используемый в печати и
             вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
@@ -37,29 +44,43 @@ const Registration = () => {
         <div className="input">
           <form id="form">
             <div id="formRaw1">
-              <input type="text" value={name} onChange={(e) => { setName(e.target.value) }} placeholder="Ваше имя" id="nameInput"/><br/><br/>
-              <input type="text" value={phone} onChange={(e) => { setPhone(e.target.value) }} placeholder="Ваш телефон" id="phoneInput"/><br/>
+              <input
+                id="nameInput"
+                type="text"
+                value={state.name}
+                name="name"
+                onChange={onChangeInput}
+                placeholder="Ваше имя"
+              />
+              <input
+                id="phoneInput"
+                type="text"
+                value={state.phoneNumber}
+                name="phoneNumber"
+                onChange={onChangeInput}
+                placeholder="Ваш телефон"
+              />
             </div>
 
             <div id="formRaw2">
+              <p>
+                <small>
+                  *Мы никому не передаем ваши данные.
+                  И не сохраняем ваш номер в базу.
+                </small>
+              </p>
 
-              <small>*Мы никому не передаем ваши данные.<br/>
-                И не сохраняем ваш номер в базу.</small><br/>
-
-
-              <input
-                type="submit"
+              <button
+                type="button"
                 id="button"
-                onClick={(e) => { fetchAddUserAction(e)}}
-                value="Посмотреть район"
-              />
-
+                onClick={fetchAddUserAction}
+              >
+                Посмотреть район
+              </button>
             </div>
-
           </form>
         </div>
       </div>
-
     </section>
   );
 };

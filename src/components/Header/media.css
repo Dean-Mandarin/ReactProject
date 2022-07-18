@@ -38,11 +38,5 @@
     .menu > li:not(:last-child) {
         border-bottom: 1px solid #444;
     }
-}
 
-/*Logo text*/
-@media only screen and (max-width: 768px) {
-    .logoBottom {
-        font-size: calc(9px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
-    }
 }

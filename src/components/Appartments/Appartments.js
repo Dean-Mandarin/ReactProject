@@ -8,38 +8,25 @@ import loft2 from './../../assets/images/loft2.jpg';
 import './style.css';
 import './media.css';
 
+//components
+import Loft from "./Loft";
+// import Loft2 from "./Loft2";
+
 const Appartments = () => {
   return (
-    <section className="appartments" id={"appartments"}>
-      <h3>Наши квартиры</h3><br/>
-
-      <div className="lofts12 anim-items">
-
-        <div className="loft loft1 anim-items">
-          <img src={loft1} width="100%"/>
-          <p>Лофт - 3 этажа</p>
-        </div>
-
-        <div className="loft loft2 anim-items">
-          <img src={loft2} width="100%"/>
-          <p>Лофт - 2 этажа</p>
-        </div>
-
+    <section className="appartments" id="appartments">
+      <div>
+        <h3>Наши квартиры</h3>
       </div>
 
+      <div className="lofts12 anim-items">
+        <Loft className="loft1" img={loft1} text="Лофт - 3 этажа"/>
+        <Loft className="loft2" img={loft2} text="Лофт - 2 этажа"/>
+      </div>
 
       <div className="lofts34 anim-items">
-
-        <div className="loft loft3 anim-items">
-          <img src={loft1} width="100%"/>
-          <p>Лофт - 3 этажа</p>
-        </div>
-
-        <div className="loft loft4 anim-items">
-          <img src={loft2} width="100%"/>
-          <p>Лофт - 2 этажа</p>
-        </div>
-
+        <Loft className="loft3" img={loft1} text="Лофт - 3 этажа"/>
+        <Loft className="loft4" img={loft2} text="Лофт - 2 этажа"/>
       </div>
 
 

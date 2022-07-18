@@ -1,8 +1,7 @@
+import React, {useEffect} from 'react';
+
 // styles
 import './App.css';
-
-//hook
-import React, {useEffect} from 'react';
 
 // components
 import Header from "./components/Header/Header";
@@ -19,24 +18,20 @@ function App() {
   useEffect(() => {
     //запуск анимаций при появлении на экране
     const animItems = document.querySelectorAll(".anim-items");
-    console.log(animItems);
 
     const observer = new IntersectionObserver(
       entries => {
         entries.forEach(entry =>{
-          entry.target.classList.toggle("active", entry.isIntersecting)
-        })
+          entry.target.classList.toggle("active", entry.isIntersecting);
+        });
       },
       {
-        threshold: 0.4,
+        threshold: 0.5,
       }
-    )
+    );
 
-    animItems.forEach(animItem => {
-      observer.observe(animItem);
-    })
+    animItems.forEach((animItem) => observer.observe(animItem));
   });
-
 
   return (
     <div className="App">

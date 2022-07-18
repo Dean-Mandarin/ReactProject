@@ -125,7 +125,7 @@ li{
     width: 60%;
 }
 
-.houseVOP {
+header .houseVOP {
     /* HouseVOP */
 
     font-family: 'Post No Bills Jaffna SemiBold';
@@ -136,7 +136,7 @@ li{
 
 }
 
-.logoBottom {
+header .logoBottom {
     /* ЖИЛОЙ КОМПЛЕКС */
     /*width: 140px;*/
     height: 14px;
@@ -159,7 +159,7 @@ header li a:hover {
 }
 
 #headerLogoBlock{
-    color: #D4C17F;
+    color: #E7E7E7;
 }
 
 #headerLogoBlock:hover{

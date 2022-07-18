@@ -5,7 +5,7 @@
     }
 
     .appartments h3 {
-        font-size: calc(25px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+        font-size: calc(22px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
     }
 
 }
@@ -13,7 +13,7 @@
 
 @media only screen and (max-width: 425px) {
     .appartments p {
-        font-size: calc(10px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+        font-size: calc(8px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
     }
     .appartments h3 {
         margin-left: calc(15px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));

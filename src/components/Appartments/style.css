@@ -51,11 +51,12 @@
     animation-name: loft_anim;
     animation-duration: 1s;
     opacity: 1;
+    justify-content: center;
 }
 
 @keyframes loft_anim {
     0% {
-        gap: 20%;
+        gap: 10%;
         opacity: 0;
     }
 

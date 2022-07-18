@@ -5,10 +5,34 @@
     padding-top: 20px;
 }
 
+.houseVOP {
+    /* HouseVOP */
+    font-family: 'Post No Bills Jaffna SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+#footerLogoBlock .logoBottom{
+    /* ЖИЛОЙ КОМПЛЕКС */
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    margin: -27px auto auto auto;
+
+}
 
 #footerLogoBlock {
-    margin-left: 10%;
+    /*margin-left: 10%;*/
     text-align: left;
+    width: 36%;
+    color: #E7E7E7;
+}
+
+#footerLogoBlock p{
+    text-align: center;
 }
 
 
@@ -16,12 +40,13 @@
     display: flex;
     flex-direction: row;
     justify-content: right;
-    margin-right: 20px;
+    padding-right: 20px;
 }
 
 .footer a {
     color: #FFFFFF;
 }
+
 
 
 .footer ul li {
@@ -47,7 +72,7 @@
 }
 
 
-.footer div ul li b a {
+.footer div ul li small a b{
     color: #D4C17F;
 }
 
@@ -55,6 +80,9 @@
     padding: 2px;
 }
 
+#footerMenu3 a{
+    padding-left: 4px;
+}
 
 
 .footer li a:hover {

@@ -26,12 +26,10 @@ function Footer() {
   }, []);
 
   return (
-    <section className="footer" id={"footer"}>
-
-
+    <footer className="footer" id="footer">
       <div id="footerLogoBlock">
-        <a href="#" className="houseVOP">HouseVOP</a><br/>
-        <a href="#" className="logoBottom">ЖИЛОЙ КОМПЛЕКС</a>
+        <p className="houseVOP">HouseVOP</p>
+        <p className="logoBottom">ЖИЛОЙ КОМПЛЕКС</p>
       </div>
 
       <div id="footerMenus">
@@ -47,25 +45,42 @@ function Footer() {
           </ul>
         </div>
 
+
         <div className="footerMenu" id="footerMenu3">
           <ul>
-            <li>Адрес: <a href="#map">Наб. реки Фонтанки 10-15</a></li>
-            <li>Телефон: <a href="#">8 (812) 123-45-67</a></li>
-            <li>Отдел продаж: 10:00 - 20:00</li>
-            <li>E-mail: <b><a href="mailto: abc@example.com">vip@housevip.ru</a></b></li>
             <li>
-              <img src={youtubeIcon} />
-              <img src={vkIcon} />
-              <img src={facebookIcon} />
-              <img src={instagramIcon} />
+              <small>
+                Адрес:
+                <a href="#place">Наб. реки Фонтанки 10-15</a>
+              </small>
+
+            </li>
+            <li>
+              <small>
+                Телефон:
+                <a href="#">8 (812) 123-45-67</a>
+              </small>
+            </li>
+            <li>
+             <small>Отдел продаж: 10:00 - 20:00</small>
+            </li>
+            <li>
+              <small>
+                E-mail:
+                <a href="mailto: abc@example.com"><b>vip@housevip.ru</b></a>
+              </small>
+            </li>
+            <li>
+              <img src={youtubeIcon}/>
+              <img src={vkIcon}/>
+              <img src={facebookIcon}/>
+              <img src={instagramIcon}/>
             </li>
           </ul>
 
         </div>
       </div>
-
-
-    </section>
+    </footer>
   );
 }
 

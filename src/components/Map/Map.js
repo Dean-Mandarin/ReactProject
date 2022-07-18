@@ -6,7 +6,7 @@ import './media.css';
 
 const Map = () => {
   return (
-    <section className="place" id={"place"}>
+    <section className="place" id="place">
       <p>Район на карте</p>
       {/*Яндекс карта*/}
       <div className="yandexMap anim-items" id="map">

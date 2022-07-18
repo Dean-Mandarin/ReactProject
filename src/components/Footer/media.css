@@ -1,5 +1,5 @@
 @media only screen and (max-width: 1280px) {
-    .footer ul li {
+    .footer ul li, #footerMenu3 small{
         font-size: calc(9px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
         line-height: calc(10px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
     }
@@ -8,5 +8,18 @@
 @media only screen and (max-width: 768px) {
     #footerMenu3 img {
         width: calc(13px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #footerLogoBlock .logoBottom{
+        font-size: calc(10px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    #footerLogoBlock {
+        margin-left: 10%;
     }
 }

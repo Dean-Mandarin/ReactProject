@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1280px) {
 
     .topBlock h1 {
-        font-size: calc(30px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
+        font-size: calc(24px + (2 - 1.4) * ((100vw - 320px) / (1200 - 800)));
     }
 }

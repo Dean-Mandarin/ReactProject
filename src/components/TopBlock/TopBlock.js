@@ -9,10 +9,10 @@ import mouseIcon from '../../assets/svg_icons/mouse.svg';
 
 function TopBlock() {
   return (
-    <section className="topBlock">
+    <section className="topBlock" id="#topAddress">
 
       {/*Жилой комплекс в историческом центре*/}
-      <div className="zhiloyKomplecs anim-items">
+      <div className="header anim-items">
         <h1>Жилой комплекс<br/> в историческом центре</h1>
       </div>
 

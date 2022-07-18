@@ -14,16 +14,19 @@ const PhonePlace = () => {
 
        {/*Иконка метки локации*/}
       <div id="location">
-        <img src={locationIcon} />
-          <a href="#"> Наб. реки Фонтанки 10-15</a>
+        <p>
+          <img src={locationIcon} />
+          Наб. реки Фонтанки 10-15
+        </p>
       </div>
 
       <div id="phone">
         {/*Иконка телефона*/}
+        <p>
         <img src={phoneIcon} />
-          <a href="#"> 8 (812) 123-45-67</a>
+          8 (812) 123-45-67
+        </p>
       </div>
-
     </section>
   );
 };
