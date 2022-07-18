@@ -12,8 +12,11 @@ const Registration = () => {
     e.preventDefault();
     const url = 'http://localhost:8080/api/user';
     await axios.post(url, { name, phoneNumber: phone }).then(res => {
-      console.log(res)
-    })
+      console.log(res);
+    });
+    setPhone('');
+    setName('');
+    console.log(name, phone);
   }
 
 
@@ -34,8 +37,8 @@ const Registration = () => {
         <div className="input">
           <form id="form">
             <div id="formRaw1">
-              <input type="text" onChange={(e) => { setName(e.target.value) }} placeholder="Ваше имя" id="nameInput"/><br/><br/>
-              <input type="text" onChange={(e) => { setPhone(e.target.value) }} placeholder="Ваш телефон" id="phoneInput"/><br/>
+              <input type="text" value={name} onChange={(e) => { setName(e.target.value) }} placeholder="Ваше имя" id="nameInput"/><br/><br/>
+              <input type="text" value={phone} onChange={(e) => { setPhone(e.target.value) }} placeholder="Ваш телефон" id="phoneInput"/><br/>
             </div>
 
             <div id="formRaw2">
