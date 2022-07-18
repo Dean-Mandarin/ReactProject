@@ -8,6 +8,8 @@ import './style.css';
 import './media.css';
 
 const Registration = () => {
+  const [stateSubmit, setStateSubmit] = useState(`*Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.`)
+
   const [state, setState] = useState({
     name: '',
     phoneNumber: '',
@@ -23,6 +25,7 @@ const Registration = () => {
     const url = 'http://localhost:8080/api/user';
     await axios.post(url, { ...state }).then((res) => {
       console.log(res);
+      setStateSubmit("* Успешно отправлено *");
     });
     setState({ name: '', phoneNumber: '' });
   };
@@ -65,8 +68,7 @@ const Registration = () => {
             <div id="formRaw2">
               <p>
                 <small>
-                  *Мы никому не передаем ваши данные.
-                  И не сохраняем ваш номер в базу.
+                  {stateSubmit}
                 </small>
               </p>
 
