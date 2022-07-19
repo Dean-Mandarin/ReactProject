@@ -31,7 +31,7 @@ function App() {
     );
 
     animItems.forEach((animItem) => observer.observe(animItem));
-  });
+  }, []);
 
   return (
     <div className="App">
