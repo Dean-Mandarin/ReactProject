@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/ReactProject/static/css/main.c5b43233.css",
+    "main.js": "/ReactProject/static/js/main.d4d50179.js",
+    "static/media/headerBg.png": "/ReactProject/static/media/headerBg.7cf8111bcbb4e35ff258.png",
+    "static/media/skyscraper.jpg": "/ReactProject/static/media/skyscraper.2c322eb40d998d88ca5a.jpg",
+    "static/media/loft1.jpg": "/ReactProject/static/media/loft1.aad5b15e12b608034f17.jpg",
+    "static/media/loft2.jpg": "/ReactProject/static/media/loft2.df69a60e69b011e40d1f.jpg",
+    "static/media/fountain.svg": "/ReactProject/static/media/fountain.cf8242e62c18aabe50bde2b6f570c39f.svg",
+    "static/media/bench.svg": "/ReactProject/static/media/bench.83d5cac799f184d2cf82207979f5926a.svg",
+    "static/media/building.svg": "/ReactProject/static/media/building.249225b16e42a637f395444140034ea0.svg",
+    "static/media/bicycle.svg": "/ReactProject/static/media/bicycle.3c78547ccfb032b9ac1dbabec698dbef.svg",
+    "static/media/vk.svg": "/ReactProject/static/media/vk.ffba474da7859afc732619c87f5c98fd.svg",
+    "static/media/phone.svg": "/ReactProject/static/media/phone.28b058d99d2230cb924486b51b8e407d.svg",
+    "static/media/mouse.svg": "/ReactProject/static/media/mouse.120f2c543a4f6f39577752fda7633cee.svg",
+    "static/media/location.svg": "/ReactProject/static/media/location.a019ab2de2b1dfed3010444af34c3968.svg",
+    "static/media/insta.svg": "/ReactProject/static/media/insta.0ac4c0ebfc3134236652a16b8c38b8e1.svg",
+    "static/media/facebook.svg": "/ReactProject/static/media/facebook.ced5e337b99842cf0c95e909b1b9ca57.svg",
+    "index.html": "/ReactProject/index.html",
+    "static/media/youtube.svg": "/ReactProject/static/media/youtube.749ad34300218a2dd9c809ae2bd1aee9.svg",
+    "main.c5b43233.css.map": "/ReactProject/static/css/main.c5b43233.css.map",
+    "main.d4d50179.js.map": "/ReactProject/static/js/main.d4d50179.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5b43233.css",
+    "static/js/main.d4d50179.js"
+  ]
+}
